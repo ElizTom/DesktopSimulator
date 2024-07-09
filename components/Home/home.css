@@ -1,0 +1,110 @@
+table, tr, td{
+    border:none;
+   }
+table {    
+    /* position: absolute; */
+    width: 406px;
+    /* top: 28px; */
+    /* left: 23px; */
+    height: 208px;
+    margin: 0 auto;
+    font-size: large;
+    border: 1px solid #0030ce;
+    color: #ffffff;
+    border-collapse: collapse;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 
+        'Gill Sans MT', ' Calibri', 
+        'Trebuchet MS', 'sans-serif';
+}
+
+td {
+    background-color: #0036e8;
+    /* background-color: #0036e800; */
+    /* border: 1px solid #0030ce; */
+    font-weight: lighter;
+    text-align:left ;
+}
+table#table > tbody > tr > td:first-child{
+    padding: 0 0 0 9px;
+    width: 30px;
+    min-width: 30px;
+    max-width: 30px;
+}
+
+tr { 
+    border: 2px solid #0030ce;
+    height: 34px;
+}
+#screenArea{
+    position: absolute;
+    background-color: #0030ce;
+    width: 435px;
+    height: 263px;
+    border-radius: 15px;
+}
+#table-wrapper {
+    position:relative;
+    margin-top: 28px;
+  }
+#table-scroll {
+    height: 203px;
+    overflow: auto;
+    margin-top: 20px;
+    direction: rtl;
+    width: 99%;
+    background: #0030ce;
+}
+#table-scroll::-webkit-scrollbar-thumb {
+	background: #ff9c07; 
+	border-radius: 10px;
+}
+#table-scroll::-webkit-scrollbar-button:single-button {
+    background-color: grey;
+    display: block;
+    border-style: solid;
+    height: 13px;
+    width: 16px;
+    border: 2px solid grey;
+}
+#table-scroll::-webkit-scrollbar-track {
+    border-radius: 0px;
+    border: 2px solid grey;
+}
+#table-scroll::-webkit-scrollbar-button:single-button:vertical:decrement {
+    border-width: 0 8px 10px 8px;
+    border-color: transparent transparent #ffffff transparent;
+}
+#table-scroll::-webkit-scrollbar-button:single-button:vertical:increment {
+    border-width: 10px 8px 0 8px;
+    border-color: #ffffff transparent transparent transparent;
+}
+#table-wrapper table {
+    width:100%;
+    direction: ltr;  
+}
+#table-wrapper table thead th .text {
+    position:absolute;   
+    top:-20px;
+    z-index:2;
+    height:20px;
+    width:35%;
+    /* border:1px solid red; */
+}
+#heading,#index{
+    color: white;
+    font-size: 1.3em;
+}
+#heading{
+    float: left;
+    padding: 4px 0px 0px 9px;
+}
+#index{
+    float: right;
+    padding: 4px 12px 0px 0px;
+}

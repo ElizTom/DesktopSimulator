@@ -1,0 +1,231 @@
+@font-face {
+    font-family: ElzaNarrow;
+    src: url(../../Fonts/ElzaTrial-Narrow.otf);
+}
+@font-face {
+    font-family: ElzaNarrowLight;
+    src: url(../../Fonts/ElzaTrial-NarrowLight.otf);
+}
+
+table, tr, td{
+    border:none;
+   }
+table, #tablesdm {    
+    width: 406px;
+    height: 208px;
+    margin: 0 auto;
+    font-size: large;
+    /* border: 1px solid #0030ce; */
+    color: #ffffff;
+    border-collapse: collapse;
+    /* font-family: ElzaNarrowLight; */
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 
+        'Gill Sans MT', ' Calibri', 
+        'Trebuchet MS', 'sans-serif';
+}
+
+tr#col1>td{
+    background-color: #ff9c07;
+}
+td {
+    background-color: #0036e8;
+    /* background-color: #0036e800; */
+    /* border: 1px solid #0030ce; */
+    font-weight: lighter;
+    /* text-align:left ; */
+}
+td#rnae {
+    background-color: #0036e800;
+    /* border: 1px solid #0030ce; */
+    font-weight: lighter;
+    text-align:left ;
+}
+table#table > tbody > tr > td:first-child{
+    padding: 0 0 0 9px;
+    /* width: 30px; */
+    min-width: 30px;
+    max-width: 60px;
+}
+
+#table tr { 
+    border: 2px solid #0030ce;
+    height: 34px;
+}
+#tablesdm{
+    font-size: 12px;
+    border: 2px solid #0030ce;
+    height: 0px;
+}
+#table1, #table2, #table3, #table4, #table5{
+    font-size: 12px;
+    border: 2px solid #0030ce;
+    height: 34px;
+    border-bottom: 1px solid white;
+}
+#sdmVal{
+    float: right;
+    padding: 0 8px 0 8px;
+    text-align: center;
+}
+.blue{
+    background-color: #0030ce;
+}
+.red{
+    background-color: red;
+}
+#screenArea{
+    position: absolute;
+    background-color: #0030ce;
+    width: 435px;
+    height: 263px;
+    border-radius: 15px;
+    background: url("Img/BG00.png");
+    background-size: cover;
+}
+#screenArea > input{
+    width: 53px;
+    height: auto;
+    margin: 8px 6px 0px 0px;
+    float: right;
+    outline: none;
+    border: 1px solid white;
+    text-align: center;
+    background-color: #ff9c07;
+    color: rgb(0, 0, 0);
+}
+#table-scroll > div > input{
+    width: 32px;
+    top: 29px;
+    height: 30px;
+    margin: 46px 0px 0px 15px;
+    outline: none;
+    outline: none;
+    border: none;
+    text-align: center;    
+    background-color: #1e24a5;
+    color: white;
+    font-size: 23px;
+}
+#phno > input{
+    width: 55px;
+    height: auto;
+    margin: 11px 0px 0px 6px;
+    float: right;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    text-align: center;    
+    /* background-color: #ff9c07; */
+}
+#table-wrapper {
+    position:relative;
+    margin-top: 35px;
+  }
+#table-scroll {
+    height: 203px;
+    overflow: auto;
+    margin-top: 20px;
+    direction: rtl;
+    width: 99%;
+    pointer-events: none;
+    /* background: #0030ce; */
+}
+#table-scroll::-webkit-scrollbar-thumb {
+	
+    background: rgb(255, 156, 7);
+    border-radius: 0px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+}
+#table-scroll::-webkit-scrollbar-button:single-button {
+    background-color: grey;
+    display: block;
+    border-style: solid;
+    height: 13px;
+    width: 16px;
+    border: 2px solid grey;
+}
+#table-scroll::-webkit-scrollbar-track {
+    border-radius: 0px;
+    border: 2px solid grey;
+}
+/* up */
+#table-scroll::-webkit-scrollbar-button:single-button:vertical:decrement {
+    border-width: 0 8px 10px 8px;
+    border-color: transparent transparent #ffffff transparent;
+}
+/* down */
+#table-scroll::-webkit-scrollbar-button:single-button:vertical:increment {
+    border-width: 10px 8px 0 8px;
+    border-color: #ffffff transparent transparent transparent;
+} 
+#table-wrapper table {
+    width:100%;
+    direction: ltr;  
+}
+#table-wrapper table thead th .text {
+    position:absolute;   
+    top:-20px;
+    z-index:2;
+    height:20px;
+    width:35%;
+    /* border:1px solid red; */
+}
+#heading,#index,#condition{
+    color: white;
+    font-size: 1.3em;
+    /* font-family: ElzaNarrow; */
+}
+#heading{
+    float: left;
+    padding: 4px 0px 0px 9px;
+}
+#condition{
+    display: none;
+    float: right;
+    padding: 1px 10px 0px 0px;
+    font-size: 13px;
+}
+#index{
+    float: right;
+    padding: 4px 12px 0px 0px;
+}
+#dtfValue02,#dtfValue05,#dtfVal{
+    float: right;
+    margin-right: 25px;
+    width: 85px;
+    text-align: center;
+    box-shadow: inset 0px -0.3px 0px 0px;
+    background-color: #1e24a5;
+}
+@keyframes progres{
+    0%{
+      width: 0%;
+    }
+    25%{
+        width: 50%;
+    }
+    50%{
+        width: 75%;
+    }
+    75%{
+        width: 85%;
+    }
+    100%{
+        width: 100%;
+    }
+};
+
+#table input[type="checkbox"]:disabled{
+    accent-color: #0030ce;
+}
+#table input[type="checkbox"] {
+    accent-color: #0030ce;
+    pointer-events: none;
+}

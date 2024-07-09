@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Menu | Komatsu Ltd.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/keys_style.css" />
+    <link rel="stylesheet" type="text/css" href="servicemenu.css"/>
+
+    <script type="text/javascript" src="../../js/jquery-min.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="servicemenu.js"></script>
+    <script type="text/javascript" src="keysFn.js"></script>
+</head>
+
+<body oncopy="return false" oncut="return false" onpaste="return false">
+    <div id="headerspaceBg"></div>
+    <div id="headerspace">
+        <img id="tag" src="../../img/common/DASH 11 Service mode.png">
+        <img id="logo" src="../../img/common/Komatsu Logo.png">
+    </div>
+    <div id="Container">
+        <div id="Page">
+            <div id="Sub">
+                <div class="Information">
+                   
+                    <div class="Panlink1"><span id="panList1"><a href="../Home/home.html">Home</a></span>
+                    </div>
+                    <div class="Panlink" id ="Panlink"><span id="panList">Service Menu</span></div>
+
+                    <div class="Scrollable">
+                        <!-- main contents -->
+                        <div id="noteArea" style="font-size: 14px; text-align: justify;"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="Main">
+                <div id="monitor">
+                    <div id="MainVisual">
+                        <div id="image1" style="height: 265px;">
+                            <div id="screenArea">
+                                <p id="heading">Service Menu</p>
+                                <p id="index">01</p>
+                                <p id="condition">D</p>
+                                <div id="table-wrapper">
+                                    <div id="table-scroll">
+                                        <table id='table' >
+                                        </table>
+                                        <table id='tablesdm' >
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            
+            <!-- <img id="startScreen" src="Img/BG00.png" style="width: 100%;opacity: 1; border-radius: 10px;"> -->
+                        </div>
+                        <ul id="menu">
+                            <li><a href="#" class="menu01" id="function1button"><span>F1</span></a>
+                            </li>
+                            <li><a href="#" class="menu02" id="function2button"><span>F2</span></a>
+                            </li>
+                            <li><a href="#" class="menu03" id="function3button"><span>F3</span></a>
+                            </li>
+                            <li><a href="#" class="menu04" id="function4button"><span>F4</span></a>
+                            </li>
+                            <li><a href="#" class="menu05" id="function5button"><span>F5</span></a>
+                            </li>
+                            <li><a href="#" class="menu06" id="function6button"><span>F6</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <script type="text/javascript" src="../../js/common_ckey_new.js"></script>
+                    </div>
+                </div>
+            </div>
+            <div id="keyoffbuttons" class="clearfix">
+                <div id="keys">
+                    <div id="keyoff"></div>
+                    <div id="keyon" onmouseover="this.src=' ../../../../img/keys/Key_on_mouse_hover.png'"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup" style="display: none;">
+        <p id="round"></p>
+        <div id="close"></div>
+    </div>
+    
+    <div id="popupPhone" style="display: none;">
+        <p id="square"></p>
+        <div id="closeP"></div>
+    </div>
+    <div id="popupScrOtp" style="display: none;">
+        <p id="squareSCR"></p>
+        <div id="closeSCR"></div>
+    </div>
+    <div id="footerspace">
+        <!-- <img style="display: none;" id="footerText" src="../../img/common/Footer text.png"> -->
+    </div>
+</body>
+
+</html>

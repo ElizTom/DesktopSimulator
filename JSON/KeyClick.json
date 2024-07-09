@@ -1,0 +1,199 @@
+{
+  "data":[
+    {
+      "id":"7.8",
+      "Name": "With/Without Counter Weight Remover",
+      "value":"",
+      "Description":["Default setting menu is used to check or change default values of the machine monitor and the machine.","For setting With/Without of multi-coupler, refer to this section."],
+      "Steps":"3. After “With/Without Counter Weight Remover” screen is displayed, select a setting by using the function switch.",
+      "Remark":["Without: When counter weight remover is not installed","With: When counter weight remover is installed","REMARK","Perform this setting properly when counter weight remover is installed, otherwise engine may stop by Auto Idle Stop function when performing removal or installation of counterweight."],
+      "Buttons": ["F3: Moves the selection downward","F4: Moves the selection upward","F5: Returns to “Default” screen.","F6: Enters the selection, and the screen returns to “Default” screen"],
+      "pages":["Without","With"]
+    },
+    {
+      "id":"9.8",
+      "Name": "Pump Calibration",
+      "Description":["Adjustment menu is used to check the various settings of the machine or to adjust the value.","The “Pump Calibration” function is used to check the matching speed for arm IN relief and bucket CURL relief and to set the matching speed of the engine correctly when the pump or pump controller is replaced."],
+      "Steps":"2. Enter “40” with numeral input switches after the “Adjustment” screen is displayed, and press F6.",
+      "Remark":["REMARK","Since this function is required only when the pump is replaced, the PC valve is adjusted or disassembled, or the pump controller is replaced, it is not displayed in the menu list.","On the “Pump Calibration” screen, select “Matching Speed Check” with function switches or numeral input switches.","Select this when it is required to check abnormality or current condition of the machine.Selecting method is the same as on “Service Menu” screen.","The alphabet letter at the right top of the screen indicates the following condition.","D: Default","F: Adjustment value at shipment from factory (Factory shipment state (Normal))","U: User calibration value"],
+      "Buttons":["F3: Moves the selected item down by one item","F4: Moves the selected item up by one item","F5: Returns to the “Service Menu” screen","F6: Enters the selected item"],
+      "NextPage": [
+        {
+          "id":"9.8.1",
+          "Name": "Matching Speed Check",
+          "Description":[""],
+          "Steps": "3. On the “Pump Calibration” screen, select “Matching Speed Check” with function switches or numeral input switches.",
+          "Remark":["Select this when it is required to check abnormality or current condition of the machine.","Selecting method is the same as on “Service Menu”screen.","The alphabet letter at the right top of the screen indicates the following condition.","D: Default","F: Adjustment value at shipment from factory (Factory shipment state (Normal))","U: User calibration value"],
+          "Buttons": ["F3: Moves the selected item down by one item","F4: Moves the selected item up by one item","F5: Returns to the “Service Menu” screen","F6: Enters the selected item"],
+          "NextPage": [
+            {
+              "id":"9.8.1.1",
+              "Name": "Matching Speed Check(1/2)",
+              "Description":[""],
+              "Steps": "4. On the “Matching Speed Check” screen, check the matching speed by relieving the arm circuit in digging operation and by using the function switches",
+              "Remark":["5. Operate the arm or bucket control lever under the following condition to check the relief matching.","REMARK","• Operate according to the arm IN relief and bucket CURL relief screen.","• Set bucket CURL relief matching after completing arm IN relief matching.","Arm lever: IN full stroke (Operate during arm IN relief matching)","Bucket lever: CURL full stroke (Operate during bucket CURL relief matching)","Before starting calibration, set the machine under the following condition.(Condition)","Hydraulic oil temperature: 45 to 55°C","Working mode: P (“Power Mode”)","Swing emergency stop switch: ON","Fuel control dial: MAX","Swing lock switch: ON","Air conditioner: OFF","⚠ The work equipment must be operated when checking. Secure sufficient area around the machine.","⚠ When operating the work equipment, ensure the safety of the surroundings."],
+              "Buttons": ["F1: Starts the matching speed check","F5: Returns to the “Pump Calibration” screen"],
+              "NextPage":[
+                {
+                  "id":"9.8.1.1.1",
+                  "Name": "Matching Speed Check(1/2)",
+                  "Description":[""],
+                  "Steps":"6. Perform arm IN relief operation. When the engine speed is stabilized, hold down F1 on the machine monitor to start checking. During matching speed check, a bar is displayed on the screen. Keep arm IN relief operation until the check is finished.",
+                  "Remark":["REMARK","It takes approximately 10 seconds to start the bar graph operation.","7. If the check is normally completed, the result is displayed.","If calibration is finished unsuccessfully, “NG” is displayed for the State of Adjustment and the failure cause code is displayed. Referring to the failure cause codes in Table 1, find out and remove the cause and repeat calibration."],
+                  "Buttons":["Press F6 to go to bucket CURL relief."],
+                  "pages":[
+                    {
+                      "name":["Engine Speed","F Pump Pressure","R Pump Pressure","Hydr.Oil Temperature"],
+                      "value":["1750","35.0","3.5","52.0"],
+                      "unit":["r/min","Mpa","Mpa","°C"]
+                    }
+                  ]  
+                }
+              ]
+            },
+            {
+              "id":"9.8.1.2",
+              "Name": "Matching Speed Check(2/2)",
+              "Description":[""], 
+              "Steps": "8. On the “Matching Speed Check” screen, check the matching speed by relieving the bucket circuit in digging operation and by using the function switches",
+              "Remark":["9. Wait under the following conditions.","Hydraulic oil temperature: 45 to 55°C","Working mode: P (“Power Mode”)","Fuel control dial: MAX","Swing lock switch: ON","Air conditioner: OFF","10. Hold down F1 of the machine monitor to start checking.During matching speed check, a bar is displayed on the screen. Keep relief operation until the check is finished."],
+              "Buttons": ["F1: Starts the matching speed check","F5: Returns to the “Pump Calibration” screen"],
+              "NextPage":[
+                {
+                  "id":"9.8.1.2.1",
+                  "Name": "Matching Speed Check(2/2)",
+                  "Description":[""], 
+                  "Steps":"11. If the check is normally completed, the result is displayed.Return to “Pump Calibration” screen by pressing F6.",
+                  "Remark":["If calibration is finished unsuccessfully, “NG” is displayed for the State of Adjustment and the failure cause code is displayed. Referring to the failure cause codes in Table 1,find out and remove the cause and repeat calibration."],
+                  "Buttons": ["F6: Returns to the “Pump Calibration” screen"],
+                  "pages":[
+                    {
+                      "name":["Engine Speed","F Pump Pressure","R Pump Pressure","Hydr.Oil Temperature"],
+                      "value":["1750","3.5","35.0","52.0"],
+                      "unit":["r/min","Mpa","Mpa","°C"]
+                    }
+                  ] 
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id":"9.8.2",
+          "Name": "Matching Speed Calibration",
+          "Description":["Adjustment menu is used to check the various settings of the machine or to adjust the value.","Before starting calibration, set the machine under the following condition.","• Perform warm-up operation for at least 30 minutes.","• Hydraulic oil temperature: 45 to 55°C","• Working mode: P (“Power Mode”)","• Fuel control dial: MAX (High idle) position","• Air conditioner: OFF","The “Pump Calibration” function is used to check the matching speed for arm IN relief and bucket CURL relief and to set the matching speed of the engine correctly when the pump or pump controller is replaced."],
+          "Steps": "3. On the “Pump Calibration” screen, select “Matching Speed Calibration” with function switches or numeral input switches.",
+          "Remark":["REMARK","• Select this when it is required to check abnormality orcurrent condition of the machine.","• For selecting method, see “Operating method of service mode” in “SERVICE MODE”."],
+          "Buttons": ["F3: Moves the selected item down by one item","F4: Moves the selected item up by one item","F5: Returns to the “Service Menu” screen","F6: Enters the selected item"],
+          "NextPage": [
+            {
+              "id":"9.8.2.1",
+              "Name": "Matching Speed Calibration(1/2)",
+              "Description":[""],
+              "Steps": "4. On the “Matching speed calibration” screen, check the matching speed by relieving the arm circuit in digging operation and by using the function switches",
+              "Remark":["5. Operate the arm or bucket control lever under the following condition to check the relief matching.","REMARK","• Operate according to the arm IN relief and bucket CURL relief screen.","• Set bucket CURL relief matching after completing arm IN relief matching.","Arm lever: IN full stroke (Operate during arm IN relief matching)","Bucket lever: CURL full stroke (Operate during bucket CURL relief matching)","Before starting calibration, set the machine under the following condition.(Condition)","Hydraulic oil temperature: 45 to 55°C","Working mode: P (“Power Mode”)","Swing emergency stop switch: ON","Fuel control dial: MAX","Swing lock switch: ON","Air conditioner: OFF","⚠ The work equipment must be operated when checking. Secure sufficient area around the machine.","⚠ When operating the work equipment, ensure the safety of the surroundings."],
+              "Buttons": ["F1: Starts the matching speed check","F5: Returns to the “Pump Calibration” screen"],
+              "NextPage":[
+                {
+                  "id":"9.8.2.1.1",
+                  "Name": "Matching Speed Calibration(1/2)",
+                  "Description":[""],
+                  "Steps":"6. Perform arm IN relief operation. When the engine speed is stabilized, hold down F1 on the machine monitor to start checking. During matching speed check, a bar is displayed on the screen. Keep arm IN relief operation until the check is finished.",
+                  "Remark":["REMARK","It takes approximately 10 seconds to start the bar graph operation.","7. If the check is normally completed, the result is displayed.","If calibration is finished unsuccessfully, “NG” is displayed for the State of Adjustment and the failure cause code is displayed. Referring to the failure cause codes in Table 1, find out and remove the cause and repeat calibration."],
+                  "Buttons":["Press F6 to go to bucket CURL relief."],
+                  "pages":[
+                    {
+                      "name":["Engine Speed","F Pump Pressure","R Pump Pressure","Hydr.Oil Temperature"],
+                      "value":["1750","35.0","3.5","52.0"],
+                      "unit":["r/min","Mpa","Mpa","°C"]
+                    }
+                  ]  
+                }
+              ]
+            },
+            {
+              "id":"9.8.2.2",
+              "Name": "Matching Speed Calibration(2/2)",
+              "Description":[""], 
+              "Steps": "8. On the “Matching Speed Check” screen, check the matching speed by relieving the bucket circuit in digging operation and by using the function switches",
+              "Remark":["9. Wait under the following conditions.","Hydraulic oil temperature: 45 to 55°C","Working mode: P (“Power Mode”)","Fuel control dial: MAX","Swing lock switch: ON","Air conditioner: OFF","10. Hold down F1 of the machine monitor to start checking.During matching speed check, a bar is displayed on the screen. Keep relief operation until the check is finished."],
+              "Buttons": ["F1: Starts the matching speed check","F5: Returns to the “Pump Calibration” screen"],
+              "NextPage":[
+                {
+                  "id":"9.8.2.2.1",
+                  "Name": "Matching Speed Calibration(2/2)",
+                  "Description":[""], 
+                  "Steps":"11. If the check is normally completed, the result is displayed.Return to “Pump Calibration” screen by pressing F6.",
+                  "Remark":["If calibration is finished unsuccessfully, “NG” is displayed for the State of Adjustment and the failure cause code is displayed. Referring to the failure cause codes in Table 1,find out and remove the cause and repeat calibration."],
+                  "Buttons": ["F6: Returns to the “Pump Calibration” screen"],
+                  "pages":[
+                    {
+                      "name":["Engine Speed","F Pump Pressure","R Pump Pressure","Hydr.Oil Temperature"],
+                      "value":["1750","3.5","35.0","52.0"],
+                      "unit":["r/min","Mpa","Mpa","°C"]
+                    }
+                  ] 
+                }
+              ]
+            }
+          ]
+
+        },
+        {
+          "id":"9.8.3",
+          "Name": "Restore to Default Setting",
+          "Description":["Adjustment menu is used to check the various settings of the machine or to adjust the value.The “Pump Calibration” function is used to check the matching speed for arm IN relief and bucket CURL relief and to set the matching speed of the engine correctly when the pump or pump controller is replaced."],
+          "Steps": "3. On the “Pump Calibration” screen, select “Restore to Default Setting” with function switches or numeral input switches.",
+          "Remark":["REMARK","For selecting method, see “Operating method of service mode” in “SERVICE MODE”"],
+          "Buttons": ["F3: Moves the selected item down by one item","F4: Moves the selected item up by one item","F5: Returns to the “Service Menu” screen","F6: Enters the selected item"],
+          "NextPage":[
+            {
+              "id":"9.8.3.1",
+              "Name": "",
+              "Description":[],
+              "Steps": "Press F6 to perform the initialization.",
+              "Remark":["When F6 is pressed, the “Pump Calibration” screen appears. When “D” appears on top right corner of the screen, the initialization is completed."]    ,
+              "Buttons": [""]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id":"8.9",
+      "Name": "Engine Stop at AdBlue/DEF Inj Overheat Count Reset",
+      "Description":["Use the testing menu to check the machine or to reset the settings of machine monitor.","This function is used to reset the number saved in the machine, the number which engine stop performed when the temperature of exhaust gas and coolant is high.","Perform “Engine Stop at AdBlue/DEF Inj Overheat Count Reset” by referring to the procedures in this section."],
+      "Steps":"2. Enter “95” with numeral input switches after the “Diagnostic Tests” screen is displayed, and press F6.",         
+      "Remark":["For selecting method, see “Operating method of service mode” in “SERVICE MODE”.","NOTICE"," When performing this item, see TROUBLESHOOTING, Failure code [AS10NT] “AdBlue/DEF Injector Overheat Caution” or Failure code [AS10KM] “AdBlue/DEF Injector Overheat Warning”, and instruct an operator about operation."],
+      "Buttons":["F3: Moves the selected item down by one item","F4: Moves the selected item up by one item","F5: Returns to the “Service Menu” screen","F6: Enters the selected item"],
+      "NextPage":[
+        {
+          "id":"8.9.1",
+          "Name": "",
+          "Description":[""],
+          "Steps":"3. On the “Engine Stop at AdBlue/DEF Inj Overheat Count Reset” screen, select an item to be set by using the function switches.",
+          "Remark":["Step","4. Execute the reset, then press F6. The screen returns to “Diagnostic Tests”."],
+          "Buttons":["F5: Returns to the “Diagnostic Tests” screen","F6: Executes resetting"]
+        }
+      ]
+    },
+    {
+      "id":"8.10",
+      "Name": "SCR Inducement One Time Password (OTP) Procedure",
+      "Description":[""],
+      "Steps":"2. Enter “90” with numeral input switches after the “Diagnostic Tests” screen is displayed, and press F6.",         
+      "Remark":[""],
+      "Buttons":["F3: Moves the selected item down by one item","F4: Moves the selected item up by one item","F5: Returns to the “Service Menu” screen","F6: Enters the selected item"],
+      "NextPage":[
+        {
+          "id":"8.9.1",
+          "Name": "",
+          "Description":[""],
+          "Steps":"3. Write down the monitor controller “S/N” and the “Key No.” and contact the KAL Administrator.",
+          "Remark":["Step","On the screen you opened, you will see a serial number (S/N). This is this machine’s Monitor Controller Serial Number. ","Step","Under that you will see Key No. This is the counter for the number of times this machine has used an OTP. ","For most people, this will be a 1. Also supply  a machine model, machine serial number, and SMR hours, as these will be required in SMAP to retrieve the OTP.","At this point you will not have the OTP, so exit out and shut the machine off.","This blue screen will pop up, asking if you want to RESET? If the answer is yes, then push ENTER.","You now have 8 hours of running time where the machine RPM can be raised to 100% and all functions should work.","Follow the shop manual instructions as to the machine posture required to clear the code."],
+          "Buttons":["F5: Returns to the “Diagnostic Tests” screen","F6: Enters the selection"]
+        }
+      ]
+    }
+  ]
+}

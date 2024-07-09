@@ -1,0 +1,58 @@
+#keyoffbuttons {
+    position: relative;
+}
+
+#keys {
+    height: 100%;
+    margin-top: 48px;
+    margin-right: 4px;
+    width: 100%;
+    float: right;
+    padding: 36px 0px 0px 0px;
+}
+
+#keyoffbuttons div a {
+    float: left;
+}
+
+#keyoffbuttons div a:first-child {
+    margin-right: 10px;
+}
+
+#keyoffbuttons	img {
+	width: 68px;
+}
+.clearfix {
+    /* clear: both; */
+}
+#keyon{
+    background: url(../img/keys/Key_on_button_pressed.png) no-repeat;
+}
+#keyonIndex{
+    background: url(../img/keys/Key_on_button_normal.png) no-repeat;
+}
+#keyonIndex, #keyon{
+    background-size: contain;
+    width: 34%;
+    height: 36%;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#keyoff{
+    background: url(../img/keys/Key_off_button_normal.png) no-repeat;
+    background-size: contain;
+    width: 34%;
+    height: 36%;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#keyon:hover,#keyonIndex:hover{
+    background: url(../img/keys/Key_on_mouse_hover.png) no-repeat;
+    background-size: contain;
+}
+#keyoff:hover{
+    background: url(../img/keys/Key_off_mouse_hover.png) no-repeat;
+    background-size: contain;
+}
