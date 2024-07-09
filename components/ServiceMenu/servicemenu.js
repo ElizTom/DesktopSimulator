@@ -36,7 +36,7 @@ $(document).ready(function () {
     function getData(callback) {
         $.ajax({
             type: 'GET',
-            url: '../../json/serviceMenu.json',
+            url: '../../JSON/serviceMenu.json',
             contentType: 'aplication/json',
             dataType: 'json',
             crossDomain: true,
@@ -64,7 +64,7 @@ $(document).ready(function () {
     function getKeyData(callbackKey) {
         $.ajax({
             type: 'GET',
-            url: '../../json/KeyClick.json',
+            url: '../../JSON/KeyClick.json',
             contentType: 'aplication/json',
             dataType: 'jsonp',
             crossDomain: true,
